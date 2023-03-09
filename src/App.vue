@@ -1,3 +1,17 @@
+<template>
+  <v-app>
+    <v-app-bar app color="primary">
+      <v-btn text>
+        <span class="mr-2">Nothing happens</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
+</template>
+
 <script lang="ts">
 import Vue from "vue";
 
@@ -5,16 +19,3 @@ export default Vue.extend({
   name: "App",
 });
 </script>
-
-<template>
-  <div id="app">
-    <nav><router-link to="/">Random</router-link></nav>
-    <router-view />
-  </div>
-</template>
-
-<style>
-#app {
-  --clr-debug: hotpink;
-}
-</style>
